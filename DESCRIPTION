@@ -1,0 +1,8 @@
+Package: rndvi
+Title: Download extract and visualize long-term AHVRR NDVI with R
+Version: 0.0.0.9000
+Authors@R: person("Tamara", "Emmenegger", email = "tamara.emmenegger@vogelwarte.ch", role = "cre")
+Description: What the package does (one paragraph).
+Depends: R (>= 3.2.2), pastecs, rgdal, raster, RCurl, gdalUtils, tiff, maps
+License: GPL
+LazyData: true

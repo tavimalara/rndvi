@@ -1,0 +1,2 @@
+Phenological metrics : 
+ threshold SOS : 0.5, EOS : 0.5, nobsperyear : 52
