@@ -27,7 +27,7 @@ pointNDVI <- function(yrs,wks,lns,lts,nms) {
   FTPurl <- "ftp://ftp.star.nesdis.noaa.gov/pub/corp/scsb/wguo/data/VHP_16km/VH/"
   filenames1 <- getURI(FTPurl)
   filenames2 <- substr(filenames1,11,(nchar(filenames1))-2)
-  filevector1 <- strsplit(filenames2,"\r\n-rw-r--r--")[[1]]
+  filevector1 <- strsplit(filenames2,"\r\n-rw-rw-r--")[[1]]
   filevector2 <- substr(filevector1,46,75)
   filevector3 <- filevector2[grep("*.SM.hdf",filevector2)]
   filevector4 <- unique(grep(paste(paste("P",yrs,sep=""),collapse="|"),filevector3, value=TRUE))
